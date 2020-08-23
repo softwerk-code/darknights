@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>twinkle little stars</title>
+</head>
+
+<body>
+    <style>
+          body{
+            background-color: black;
+        }
+
+        .stars{
+            background-color: white;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            animation-iteration-count: infinite;
+            animation-name: twinkle;
+            animation-duration: 5s;
+        }
+
+        @keyframes twinkle{
+            20%{
+                opacity: 0;
+                transform: scale(2);
+            }
+        }
+
+        #first{
+            position: absolute;
+            left: 50px;
+        }
+
+          #second{
+            position: relative;
+            
+        
+        }
+
+            #third{
+            position: relative;
+            left: 80px;
+            
+        }
+
+        #moon{
+            background-color: transparent;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            box-shadow: 25px 9px 0px 0px white;
+            position: absolute;
+            left: 80%;
+        }
+
+        .container{
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        .circle{
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            overflow: hidden;
+            border: hidden;
+            z-index: 3;
+            
+        }
+
+        .circle:nth-child(2){
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            left: -70px;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .circle:nth-child(3){
+            width: 130px;
+            height: 130px;
+            top:70px;
+            left: 150px;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .base{
+            background-color: white;
+            width: 210px;
+            height: 30px;
+            position: absolute;
+            top: 170px;
+            overflow: hidden;
+        }
+      .bar{
+          width: 260px;
+          height: 260px;
+          background-color:cornflowerblue;
+          position: absolute;
+          bottom: 0;
+          transform: translateY(200px);
+          animation: load 5s infinite;
+      }
+
+      @keyframes load{
+          to{
+              transform: translateY(0);
+          }
+      }
+      .container2{
+          width: 1px;
+          height: 1px;
+          background-color: white;
+          position: absolute;
+          top: 50%;
+          right: 70%;
+         
+      }
+
+      .circle2{
+          width: 220px;
+          height: 230px;
+          background-color: white;
+          position: absolute;
+          border-radius: 50%;
+           top: 50%;
+          right: 70%;
+         overflow: hidden;
+          z-index: 3;
+      }
+
+      .circle2:nth-child(2){
+          width: 160px;
+          height: 160px;
+          background-color: white;
+          position: absolute;
+          bottom: 150px;
+          left: -130px;
+          overflow: hidden;
+          z-index: 1;
+      }
+
+      .circle2:nth-child(3){
+          width: 150px;
+          height: 150px;
+          background-color:white;
+          position: absolute;
+          top: 100px;
+          right: 100px;
+          overflow: hidden;
+          z-index: 2;
+      }
+
+          .circle2:nth-child(4){
+          width: 130px;
+          height: 130px;
+          background-color:white;
+          position: absolute;
+          top: 120px;
+          right: -1px;
+          overflow: hidden;
+          z-index: 2;
+      }
+
+      .animate{
+          background-color: cornflowerblue;
+          width: 250px;
+          height: 250px;
+          position: absolute;
+          bottom: 0;
+          transform: translateY(200px);
+          animation: movement 5s infinite;
+      }
+
+      @keyframes movement{
+          to{
+              transform: translateY(0);
+          }
+      }
+
+    </style>
+
+
+    <div class="stars" id="first"></div>
+    <div class="stars" id="second"></div>
+    <div class="stars" id="third"></div>
+    <div id="cloud"></div>
+    <div id="moon"></div>
+    <div class="container">
+        <div class="circle">
+            <div class="bar"></div>
+        </div>
+        <div class="circle">
+            <div class="bar"></div>
+        </div>
+        <div class="circle">
+            <div class="bar"></div>
+        </div>
+        <div class="base">
+            <div class="bar"></div>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="circle2">
+            <div class="animate"></div>
+        </div>
+        <div class="circle2">
+            <div class="animate"></div>
+        </div>
+        <div class="circle2">
+            <div class="animate"></div>
+        </div>
+        <div class="circle2">
+            <div class="animate"></div>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
